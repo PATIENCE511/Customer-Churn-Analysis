@@ -46,27 +46,19 @@ Key Features:
 - Estimated Salary
 - Churn Status
 
-## Dataset Information
+## Data Cleaning and Transformation
 
-Source: Kaggle Customer Churn Dataset
+The following data preparation steps were performed:
 
-Records: 10,000 Customers
+- Checked for missing values
+- Verified data consistency
+- Created Age Group categories
+- Created Tenure Categories
+- Built calculated measures using DAX
+- Developed KPI metrics
+- Created a data model for reporting
+<img width="1906" height="996" alt="cleaning with powerquery" src="https://github.com/user-attachments/assets/16accd90-e078-4289-85fc-02044b0ab4c2" />
 
-Key Features:
-
-- Customer ID
-- Geography
-- Gender
-- Age
-- Credit Score
-- Tenure
-- Balance
-- Number of Products
-- Credit Card Status
-- Active Member Status
-- Estimated Salary
-- Churn Status
-  
 
 ## DAX Measures
 
