@@ -71,9 +71,8 @@ Key Features:
 ## DAX Measures
 
 The dashboard uses custom DAX measures to calculate business metrics.
-Total customer =COUNTROWS(Churn_dataset)
-Churn Rate =
-DIVIDE(
+* Total customer =COUNTROWS(Churn_dataset)
+Churn Rate =DIVIDE(
     CALCULATE(
         [Total customer],
         Churn_dataset[Exited]=1
@@ -81,10 +80,9 @@ DIVIDE(
     [Total customer],
     0
 )
-Retention = 1 - [Churn Rate]
+* Retention = 1 - [Churn Rate]
 
-Revenue Risk =
-DIVIDE(
+* Revenue Risk =DIVIDE(
     [High risk Revenue],
     CALCULATE(
         SUM(Churn_dataset[Balance]),
@@ -115,10 +113,10 @@ Users can analyze churn by:
 
 ## Key Performance Indicators
 KPI	Value
-Total Customers	10,000
-Churn Rate	20.37%
-Retention Rate	79.63%
-Revenue Risk	23.82%
+- Total Customers	10,000
+- Churn Rate	20.37%
+- Retention Rate	79.63%
+- Revenue Risk	23.82%
 
 ## Key Insights
 1. Customer Attrition Remains a Significant Business Challenge
@@ -127,16 +125,16 @@ The analysis revealed an overall churn rate of 20.37%, indicating that approxima
 2. Germany Exhibits the Highest Churn Concentration
 Among all geographic markets analyzed, Germany recorded the highest churn rate at 32.44%, significantly exceeding France and Spain. This suggests that customer retention issues are disproportionately concentrated within the German market and warrant further business investigation.
 
-3.Older Customers Represent the Highest-Risk Segment
+3. Older Customers Represent the Highest-Risk Segment
 Customer churn increases considerably with age. The Old customer segment recorded a churn rate of 55.21%, making it the most vulnerable demographic group within the customer base. This finding suggests that age-related factors may be influencing customer retention outcomes.
 
 4. Revenue Exposure Extends Beyond Customer Loss
 The dashboard identified a Revenue Risk of 23.82%, indicating that a notable proportion of customer value is associated with customers who eventually churned. This demonstrates that churn is not only a customer retention issue but also a direct financial risk to the business.
 
-5.Credit Profile Appears to Influence Retention Behaviour
+5. Credit Profile Appears to Influence Retention Behaviour
 Customers within lower credit-score categories exhibited stronger churn tendencies compared to other customer groups. This pattern suggests a potential relationship between credit profile, product accessibility, and customer loyalty.
 
-6.Customer Distribution Is Relatively Balanced Across Tenure Segments
+6. Customer Distribution Is Relatively Balanced Across Tenure Segments
 Analysis of tenure categories showed a fairly even distribution between New_bie, Regular, and Loyal customers. While this provides a useful view of customer composition, additional churn analysis by tenure would provide deeper insights into customer lifecycle behaviour.
 
 ## Recommendations
